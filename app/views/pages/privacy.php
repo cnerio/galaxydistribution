@@ -1,0 +1,120 @@
+<?php require APPROOT . '/views/inc/header.php'; ?>
+<?php require APPROOT . '/views/inc/navbar.php'; ?>
+  <main class="px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
+    <section class="mx-auto max-w-7xl">
+      <div class="max-w-4xl">
+        <!-- <p class="text-sm font-semibold uppercase tracking-[0.22em] text-brand-blue">Legal</p> -->
+        <h1 class="mt-3 font-display text-4xl font-bold text-brand-navy sm:text-5xl">Privacy Policy</h1>
+        <!-- <p class="mt-5 max-w-3xl text-lg leading-8 text-brand-slate">This page reuses the Tailwind header and footer and presents the privacy policy as native HTML text inside a fixed-height scrollable panel.</p> -->
+      </div>
+
+      <div id="privacy-panel" class="mt-10 overflow-hidden rounded-2xl border border-brand-border bg-white shadow-card">
+        <!-- <div class="flex flex-col gap-4 border-b border-slate-200 px-5 py-4 sm:flex-row sm:items-center sm:justify-between sm:px-6">
+          <div>
+            <h2 class="text-xl font-bold text-brand-navy">Privacy Policy</h2>
+            <p class="mt-1 text-sm text-brand-slate">Based on the text published at https://galaxydistribution.com/privacy-policy/</p>
+          </div>
+          <a href="https://galaxydistribution.com/privacy-policy/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center rounded-full border border-brand-blue px-4 py-2 text-sm font-semibold uppercase tracking-[0.16em] text-brand-blue transition hover:bg-brand-blue hover:text-white">Open in New Tab</a>
+        </div> -->
+
+        <div class="h-[70vh] min-h-[540px] overflow-y-auto bg-white px-5 py-6 sm:px-6">
+          <article class="max-w-none space-y-8 text-[15px] leading-7 text-brand-slate">
+            <section class="space-y-3">
+              <p class="text-sm font-semibold uppercase tracking-[0.18em] text-brand-blue">Last Updated: June 26, 2023</p>
+              <p>This Privacy Policy describes Galaxy Distribution’s policies and procedures on the collection, use, and disclosure of your information when you use the service, and explains your privacy rights and how the law protects you.</p>
+              <p>Galaxy Distribution uses personal data to provide and improve the service. By using the service, you agree to the collection and use of information in accordance with this Privacy Policy.</p>
+            </section>
+
+            <section class="space-y-3">
+              <h3 class="font-display text-2xl font-bold text-brand-navy">Interpretation and Definitions</h3>
+              <p>Capitalized words have defined meanings whether they appear in singular or plural form. In this Privacy Policy, terms such as Account, Affiliate, Company, Cookies, Country, Device, Personal Data, Service, Service Provider, Usage Data, Website, and You refer to the meanings published by Galaxy Distribution on the source privacy policy page.</p>
+              <p>The Company is identified as Galaxy Distribution LLC, 7470 Bartlett Corp Cove West, Suite 101, Bartlett, Tennessee. The Website refers to Galaxy Distribution at https://galaxydistribution.com.</p>
+            </section>
+
+            <section class="space-y-3">
+              <h3 class="font-display text-2xl font-bold text-brand-navy">Collecting and Using Your Personal Data</h3>
+              <p>While using the service, Galaxy Distribution may ask you to provide personally identifiable information that can be used to contact or identify you. This may include your email address, first and last name, phone number, address, state, province, ZIP or postal code, city, and usage data.</p>
+              <p>Usage Data is collected automatically and may include information such as your IP address, browser type and version, pages visited, time and date of visits, time spent on pages, device identifiers, and diagnostic data. When accessing the service through a mobile device, additional data such as device type, unique device ID, mobile operating system, mobile browser type, and related diagnostic information may also be collected.</p>
+            </section>
+
+            <section class="space-y-3">
+              <h3 class="font-display text-2xl font-bold text-brand-navy">Tracking Technologies and Cookies</h3>
+              <p>Galaxy Distribution uses cookies and similar technologies such as beacons, tags, and scripts to track activity on the service, store information, improve the service, and analyze how it is used. Cookies may be session cookies or persistent cookies.</p>
+              <p>Necessary or essential cookies help authenticate users and provide requested website features. Notice acceptance cookies record whether a user accepted cookies. Functionality cookies remember preferences such as language or login details to improve the user experience.</p>
+              <p>If you disable cookies in your browser, some parts of the service may not function properly. For more details, users are directed to the cookies section of the Privacy Policy.</p>
+            </section>
+
+            <section class="space-y-3">
+              <h3 class="font-display text-2xl font-bold text-brand-navy">Use of Your Personal Data</h3>
+              <p>Galaxy Distribution may use personal data to provide and maintain the service, monitor service usage, manage user accounts, perform contracts related to purchased products or services, contact users by email, phone, SMS, or other electronic methods, and send updates related to services or security.</p>
+              <p>Personal data may also be used to send news, special offers, and other information about similar goods or services, unless you opt out. The Company may use data to manage requests, evaluate business transfers, analyze trends, measure campaign effectiveness, and improve services, products, marketing, and user experience.</p>
+            </section>
+
+            <section class="space-y-3">
+              <h3 class="font-display text-2xl font-bold text-brand-navy">Sharing of Personal Information</h3>
+              <p>Galaxy Distribution may share personal information with service providers that help monitor, analyze, or support the service, with affiliates that are required to honor this Privacy Policy, and with business partners that offer related products, services, or promotions.</p>
+              <p>Information may also be shared in connection with mergers, acquisitions, financing, sales of company assets, or other business transfers. If users share information publicly or interact in public areas of the service, that information may be visible to others and may be distributed publicly. Additional disclosures may be made with your consent.</p>
+            </section>
+
+            <section class="space-y-3">
+              <h3 class="font-display text-2xl font-bold text-brand-navy">Retention of Your Personal Data</h3>
+              <p>Galaxy Distribution retains personal data only as long as necessary for the purposes described in the Privacy Policy, including legal compliance, dispute resolution, and enforcement of agreements and policies.</p>
+              <p>Usage Data is generally retained for a shorter period unless it is needed to strengthen security, improve service functionality, or comply with legal obligations.</p>
+            </section>
+
+            <section class="space-y-3">
+              <h3 class="font-display text-2xl font-bold text-brand-navy">Transfer of Your Personal Data</h3>
+              <p>Your information may be processed at the Company’s operating offices and other locations where processing parties are located. This means data may be transferred to jurisdictions with different data protection laws.</p>
+              <p>By submitting your information, you consent to this transfer. Galaxy Distribution states that it will take reasonable steps to ensure data is handled securely and in accordance with the Privacy Policy.</p>
+            </section>
+
+            <section class="space-y-3">
+              <h3 class="font-display text-2xl font-bold text-brand-navy">Delete Your Personal Data</h3>
+              <p>You may have the right to delete or request help deleting personal data collected about you. If the service includes an account area, you may be able to update, amend, or delete certain personal information directly through account settings.</p>
+              <p>You may also contact Galaxy Distribution to request access to, correction of, or deletion of personal information. Some information may still need to be retained if the Company has a legal obligation or lawful basis to do so.</p>
+            </section>
+
+            <section class="space-y-3">
+              <h3 class="font-display text-2xl font-bold text-brand-navy">Disclosure of Your Personal Data</h3>
+              <p>If Galaxy Distribution is involved in a merger, acquisition, or asset sale, personal data may be transferred. The Company states that users will receive notice before their personal data becomes subject to a different privacy policy.</p>
+              <p>The Company may also disclose personal data when required by law, in response to valid requests from public authorities, to comply with legal obligations, protect rights or property, investigate wrongdoing, protect users or the public, or defend against legal liability.</p>
+            </section>
+
+            <section class="space-y-3">
+              <h3 class="font-display text-2xl font-bold text-brand-navy">Security of Your Personal Data</h3>
+              <p>Galaxy Distribution states that its services are built with security features designed to protect information and block threats. The published policy describes measures such as encryption in transit, access controls, security reviews, and restrictions on employee, contractor, and agent access to personal information.</p>
+              <p>Anyone with access to such information is expected to comply with strict confidentiality obligations and may be disciplined or terminated for violations.</p>
+            </section>
+
+            <section class="space-y-3">
+              <h3 class="font-display text-2xl font-bold text-brand-navy">Children’s Privacy</h3>
+              <p>The service is not directed to anyone under the age of 13, and Galaxy Distribution states that it does not knowingly collect personally identifiable information from children under 13. If a parent or guardian believes a child provided personal data, they may contact the Company so that it can be removed.</p>
+              <p>Where consent is required by law, parental consent may be required before the Company collects and uses a child’s information.</p>
+            </section>
+
+            <section class="space-y-3">
+              <h3 class="font-display text-2xl font-bold text-brand-navy">Links to Other Websites</h3>
+              <p>The service may contain links to third-party websites that are not operated by Galaxy Distribution. If you click a third-party link, you will be taken to that third-party site.</p>
+              <p>Galaxy Distribution advises users to review the privacy policy of every site they visit and states that it has no control over and assumes no responsibility for third-party content, privacy policies, or practices.</p>
+            </section>
+
+            <section class="space-y-3">
+              <h3 class="font-display text-2xl font-bold text-brand-navy">Changes to This Privacy Policy</h3>
+              <p>Galaxy Distribution may update its Privacy Policy from time to time. Changes may be announced through email or a prominent notice on the service before the change becomes effective, and the Last Updated date at the top of the page will be revised.</p>
+              <p>Users are advised to review the Privacy Policy periodically. Changes become effective when they are posted on the page.</p>
+            </section>
+
+            <section class="space-y-3">
+              <h3 class="font-display text-2xl font-bold text-brand-navy">Contact Us</h3>
+              <p>If you have questions about the Privacy Policy, the published contact email is itadmin@galaxydistribution.com.</p>
+            </section>
+          </article>
+        </div>
+      </div>
+
+      <!-- <div class="mt-6 rounded-2xl border border-slate-200 bg-white px-5 py-4 text-sm leading-7 text-brand-slate shadow-sm sm:px-6">
+        The panel above uses a fixed height with its own scrollbar so the page keeps the same layout while the privacy policy remains readable as native text.
+      </div> -->
+    </section>
+  </main>
+<?php require APPROOT . '/views/inc/footer.php'; ?>

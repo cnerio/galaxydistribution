@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galaxy Distribution Landing Page</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind = window.tailwind || {};
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              blue: '#0b73c9',
+              navy: '#071426',
+              slate: '#6b7280',
+              border: '#d9e1ea'
+            }
+          },
+          fontFamily: {
+            sans: ['Barlow', 'sans-serif'],
+            display: ['Space Grotesk', 'sans-serif']
+          },
+          boxShadow: {
+            card: '0 16px 30px rgba(7, 20, 38, 0.08)'
+          },
+          backgroundImage: {
+            'hero-glow': 'radial-gradient(circle at 15% 35%, rgba(71, 157, 255, 0.95), transparent 18%), radial-gradient(circle at 42% 12%, rgba(255, 214, 102, 0.6), transparent 16%), radial-gradient(circle at 72% 24%, rgba(255, 132, 74, 0.45), transparent 18%), radial-gradient(circle at 88% 44%, rgba(255, 126, 185, 0.55), transparent 20%), linear-gradient(108deg, #081326 0%, #263b7a 38%, #4b4177 58%, #8a4160 76%, #221515 100%)'
+          }
+        }
+      }
+    };
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background: #f8fafc;
+    }
+
+    .hero-stars {
+      background-image: url('https://galaxydistribution.com/wp-content/uploads/2024/08/galaxybacground-scaled.webp');
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    .hero-stars::before,
+    .hero-stars::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      opacity: 0.85;
+    }
+
+    .hero-stars::before {
+      background-image:
+        radial-gradient(circle, rgba(255, 255, 255, 0.9) 0 1.2px, transparent 1.4px),
+        radial-gradient(circle, rgba(255, 255, 255, 0.65) 0 0.9px, transparent 1.1px),
+        radial-gradient(circle, rgba(255, 239, 191, 0.75) 0 1px, transparent 1.2px);
+      background-size: 170px 170px, 130px 130px, 210px 210px;
+      background-position: 0 0, 38px 55px, 105px 18px;
+      animation: driftStars 24s linear infinite;
+    }
+
+    .hero-stars::after {
+      background-image:
+        linear-gradient(115deg, transparent 15%, rgba(255, 255, 255, 0.13) 48%, transparent 80%),
+        radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.28), transparent 55%);
+      mix-blend-mode: screen;
+      animation: pulseNebula 7s ease-in-out infinite alternate;
+    }
+
+    .hero-slide {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 280ms ease;
+    }
+
+    .hero-slide.is-active {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .hero-dot.is-active {
+      background: rgba(255, 255, 255, 0.95);
+      border-color: rgba(255, 255, 255, 0.95);
+    }
+
+    .hero-nav {
+      opacity: 0;
+      transform: translateY(-50%) scale(0.96);
+      transition: opacity 180ms ease, transform 180ms ease;
+    }
+
+    .mobile-nav.is-open {
+      display: flex;
+    }
+
+    .hero-panel:hover .hero-nav,
+    .hero-panel:focus-within .hero-nav {
+      opacity: 1;
+      transform: translateY(-50%) scale(1);
+    }
+
+    .text-shadow{
+        text-shadow: 2px 2px 2px #000000;
+    }
+
+    .bg-brand-blue {
+        background-color: rgba(0, 113, 206, 1);
+    }
+
+    @keyframes driftStars {
+      from {
+        transform: translate3d(0, 0, 0);
+      }
+
+      to {
+        transform: translate3d(-18px, 12px, 0);
+      }
+    }
+
+    @keyframes pulseNebula {
+      from {
+        opacity: 0.45;
+      }
+
+      to {
+        opacity: 0.85;
+      }
+    }
+  </style>
+</head>
+<body class="font-sans text-slate-800 antialiased">
+  <div class="min-h-screen bg-white">
+    <div class="bg-brand-blue text-white">
+      <div class="mx-auto flex max-w-7xl flex-col items-end justify-end gap-2 px-4 py-2 text-[11px] font-semibold uppercase tracking-[0.18em] sm:flex-row sm:px-6 lg:px-8">
+        <a href="mailto:info@galaxydistribution.com" class="transition hover:text-sky-100"><i class="fa fa-envelope"></i> Email: info@galaxydistribution.com</a>
+        <a href="tel:+18303345600" class="transition hover:text-sky-100"><i class="fa fa-phone-square"></i> Contact: (830) 334-5600</a>
+      </div>
+    </div>
+
+    <header class="border-b border-slate-100 bg-white">
+      <div class="mx-auto max-w-7xl px-4 py-5 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between">
+        <a href="#" class="flex items-center">
+          <img src="./img/GalaxyLogo.png" alt="Galaxy Distribution" class="h-11 w-auto sm:h-14">
+        </a>
+        <button type="button" class="inline-flex h-11 w-11 items-center justify-center rounded-full border border-slate-200 text-brand-navy transition hover:border-brand-blue hover:text-brand-blue focus:outline-none focus:ring-2 focus:ring-brand-blue/30 md:hidden" data-menu-toggle aria-expanded="false" aria-controls="mobile-nav" aria-label="Toggle navigation menu">
+          <span class="sr-only">Open navigation menu</span>
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+        <nav class="hidden items-center gap-8 text-sm font-bold uppercase tracking-[0.16em] text-brand-navy md:flex">
+          <a href="#support" class="transition hover:text-brand-blue">Support</a>
+          <a href="#work" class="transition hover:text-brand-blue">Work With Us</a>
+        </nav>
+      </div>
+        <nav id="mobile-nav" class="mobile-nav hidden flex-col gap-3 border-t border-slate-100 pt-4 text-sm font-bold uppercase tracking-[0.16em] text-brand-navy md:hidden">
+          <a href="#support" class="transition hover:text-brand-blue">Support</a>
+          <a href="#work" class="transition hover:text-brand-blue">Work With Us</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero-panel relative isolate overflow-hidden bg-hero-glow">
+        <div class="hero-stars absolute inset-0"></div>
+        <div class="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black/20"></div>
+        <button type="button" class="hero-nav absolute left-4 top-1/2 z-10 inline-flex h-12 w-12 items-center justify-center rounded-full border border-white/35 bg-black/30 text-xl text-white backdrop-blur-sm hover:bg-black/45 focus:opacity-100 focus:outline-none focus:ring-2 focus:ring-white/70 sm:left-6" data-hero-prev aria-label="Previous hero slide">
+          &#8249;
+        </button>
+        <button type="button" class="hero-nav absolute right-4 top-1/2 z-10 inline-flex h-12 w-12 items-center justify-center rounded-full border border-white/35 bg-black/30 text-xl text-white backdrop-blur-sm hover:bg-black/45 focus:opacity-100 focus:outline-none focus:ring-2 focus:ring-white/70 sm:right-6" data-hero-next aria-label="Next hero slide">
+          &#8250;
+        </button>
+        <div class="relative mx-auto flex min-h-[330px] max-w-7xl flex-col items-center justify-center px-4 py-16 text-center text-white sm:min-h-[360px] sm:px-6 lg:px-8">
+          <img src="./img/Logo_White.png" alt="Galaxy" class="mb-4 h-24 w-auto opacity-95">
+          
+          <div class="relative mt-4 h-[160px] w-full max-w-3xl sm:h-[180px]">
+            <div class="hero-slide is-active space-y-1 text-lg font-medium text-white/90 sm:text-[1.75rem] sm:leading-9 text-left" data-hero-slide>
+              <h1 class="font-display text-4xl font-bold uppercase tracking-[0.04em] sm:text-5xl lg:text-6xl text-shadow">Galaxy <span style="color: #0c71c3;">noun</span></h1>
+              <p class="text-shadow"><span style="color: #0c71c3;">gal-axy</span> ('ga-lək-sẽ)</p>
+              <p class="text-shadow">An assemblage of brilliant or notable stars</p>
+            </div>
+            <div class="hero-slide space-y-1 text-lg font-medium text-white/90 sm:text-[1.75rem] sm:leading-9 text-center" data-hero-slide>
+              <h1 class="font-display text-4xl font-bold uppercase tracking-[0.04em] sm:text-5xl  text-shadow">Acquisition to Delivery</h1>
+              <p class="text-shadow">Field and Online Marketing</p>
+              <p class="text-shadow">Airtime and Devices</p>
+              <p class="text-shadow">Warehouse and Fulfillment</p>
+            </div>
+          </div>
+          <div class="mt-8 flex items-center gap-2" aria-label="Hero slides">
+            <span class="hero-dot is-active h-3 w-3 rounded-full border border-white/80 bg-transparent" data-hero-dot></span>
+            <span class="hero-dot h-3 w-3 rounded-full border border-white/80 bg-transparent" data-hero-dot></span>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-white px-4 py-20 sm:px-6 lg:px-8">
+        <div class="mx-auto max-w-5xl">
+          <div class="grid gap-5 md:grid-cols-3">
+            <article class="rounded-sm border border-brand-border bg-white p-6 shadow-card shadow-slate-100/40">
+              <h2 class="text-[1.55rem] font-bold text-brand-navy">Acquisition to Delivery</h2>
+              <p class="mt-4 text-lg leading-8 text-slate-500">Galaxy Distribution will provide you with all or any of the pieces needed to grow your customer&nbsp;base.</p>
+            </article>
+
+            <article class="rounded-sm border border-brand-border bg-white p-6 shadow-card shadow-slate-100/40">
+              <h2 class="text-[1.55rem] font-bold text-brand-navy">Field and Online Marketing</h2>
+              <p class="mt-4 text-lg leading-8 text-slate-500">Galaxy Distribution has a vast network of field marketing resources in every state. We train and audit our network to make sure they are compliant with both program and provider requirements. Our online marketing team provides qualified leads that make it easier to convert to an enrollment. You can target one zip code or the entire United States and&nbsp;beyond.</p>
+            </article>
+
+            <article class="rounded-sm border border-brand-border bg-white p-6 shadow-card shadow-slate-100/40">
+              <h2 class="text-[1.55rem] font-bold text-brand-navy">Device Procurement</h2>
+              <p class="mt-4 text-lg leading-8 text-slate-500">Deeply forged partnerships with manufacturers and wholesalers across the United States let Galaxy secure devices for our customers at or below direct pricing. We offer warehouse and 3PL services in Oklahoma and Tennessee, which makes receiving and distributing more cost-effective for our&nbsp;customers.</p>
+            </article>
+          </div>
+
+          <div class="mx-auto mt-6 grid max-w-3xl gap-5 md:grid-cols-2">
+            <article class="rounded-sm border border-brand-border bg-white p-6 shadow-card shadow-slate-100/40">
+              <h2 class="text-[1.55rem] font-bold text-brand-navy">Carrier Services</h2>
+              <p class="mt-4 text-lg leading-8 text-slate-500">Galaxy Distribution is proud to offer competitively priced carrier services through our partnerships with major&nbsp;carriers.</p>
+            </article>
+
+            <article class="rounded-sm border border-brand-border bg-white p-6 shadow-card shadow-slate-100/40">
+              <h2 class="text-[1.55rem] font-bold text-brand-navy">Fulfillment</h2>
+              <p class="mt-4 text-lg leading-8 text-slate-500">Our fulfillment team in Shawnee, OK can handle all or any parts of your fulfillment process; whatever you need, we can provide. From enrollment to shipping and everything in&nbsp;between.</p>
+            </article>
+          </div>
+
+          
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-[#2a2f36] text-slate-300">
+      <div class="mx-auto flex max-w-7xl flex-col gap-4 px-4 py-5 text-center text-sm sm:px-6 md:flex-row md:items-center md:justify-between md:text-left lg:px-8">
+        <p>Galaxy Distribution LLC &copy; 2026.</p>
+        <div class="flex flex-wrap items-center justify-center gap-3 md:justify-end">
+          <a href="#" class="transition hover:text-white">Privacy Policy</a>
+          <span class="hidden text-slate-500 md:inline">|</span>
+          <a href="#" class="transition hover:text-white">Terms of Service</a>
+          <span class="hidden text-slate-500 md:inline">|</span>
+          <a href="#" class="transition hover:text-white">Accessibility</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    (function() {
+      const menuToggle = document.querySelector('[data-menu-toggle]');
+      const mobileNav = document.querySelector('#mobile-nav');
+      const slides = Array.from(document.querySelectorAll('[data-hero-slide]'));
+      const dots = Array.from(document.querySelectorAll('[data-hero-dot]'));
+      const prevButton = document.querySelector('[data-hero-prev]');
+      const nextButton = document.querySelector('[data-hero-next]');
+      const intervalMs = 6500;
+
+      if (menuToggle && mobileNav) {
+        menuToggle.addEventListener('click', function() {
+          const isOpen = mobileNav.classList.toggle('is-open');
+          mobileNav.classList.toggle('hidden', !isOpen);
+          menuToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+        });
+      }
+
+      if (!slides.length || slides.length !== dots.length) {
+        return;
+      }
+
+      let currentIndex = 0;
+      let timerId;
+
+      function setActiveSlide(index) {
+        slides.forEach((slide, slideIndex) => {
+          slide.classList.toggle('is-active', slideIndex === index);
+        });
+
+        dots.forEach((dot, dotIndex) => {
+          dot.classList.toggle('is-active', dotIndex === index);
+        });
+      }
+
+      function showNextSlide(step) {
+        currentIndex = (currentIndex + step + slides.length) % slides.length;
+        setActiveSlide(currentIndex);
+      }
+
+      function restartTimer() {
+        window.clearInterval(timerId);
+        timerId = window.setInterval(function() {
+          showNextSlide(1);
+        }, intervalMs);
+      }
+
+      setActiveSlide(currentIndex);
+      restartTimer();
+
+      if (prevButton) {
+        prevButton.addEventListener('click', function() {
+          showNextSlide(-1);
+          restartTimer();
+        });
+      }
+
+      if (nextButton) {
+        nextButton.addEventListener('click', function() {
+          showNextSlide(1);
+          restartTimer();
+        });
+      }
+    })();
+  </script>
+</body>
+</html>

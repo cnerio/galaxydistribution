@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galaxy Distribution Work With Us</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind = window.tailwind || {};
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              blue: '#0b73c9',
+              navy: '#071426',
+              slate: '#6b7280',
+              border: '#d9e1ea',
+              danger: '#ff1f1f'
+            }
+          },
+          fontFamily: {
+            sans: ['Barlow', 'sans-serif'],
+            display: ['Space Grotesk', 'sans-serif']
+          },
+          boxShadow: {
+            card: '0 16px 30px rgba(7, 20, 38, 0.08)'
+          }
+        }
+      }
+    };
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body {
+      background: #f8fafc;
+    }
+
+    .mobile-nav.is-open {
+      display: flex;
+    }
+
+    .bg-brand-blue {
+      background-color: rgba(0, 113, 206, 1);
+    }
+  </style>
+</head>
+<body class="font-sans text-slate-800 antialiased">
+  <div class="min-h-screen bg-white">
+    <div class="bg-brand-blue text-white">
+      <div class="mx-auto flex max-w-7xl flex-col items-end justify-end gap-2 px-4 py-2 text-[11px] font-semibold uppercase tracking-[0.18em] sm:flex-row sm:px-6 lg:px-8">
+        <a href="mailto:info@galaxydistribution.com" class="transition hover:text-sky-100"><i class="fa fa-envelope"></i> Email: info@galaxydistribution.com</a>
+        <a href="tel:+18303345600" class="transition hover:text-sky-100"><i class="fa fa-phone-square"></i> Contact: (830) 334-5600</a>
+      </div>
+    </div>
+
+    <header class="border-b border-slate-100 bg-white">
+      <div class="mx-auto max-w-7xl px-4 py-5 sm:px-6 lg:px-8">
+        <div class="flex items-center justify-between">
+          <a href="./landing-tailwind.html" class="flex items-center">
+            <img src="./img/GalaxyLogo.png" alt="Galaxy Distribution" class="h-11 w-auto sm:h-14">
+          </a>
+          <button type="button" class="inline-flex h-11 w-11 items-center justify-center rounded-full border border-slate-200 text-brand-navy transition hover:border-brand-blue hover:text-brand-blue focus:outline-none focus:ring-2 focus:ring-brand-blue/30 md:hidden" data-menu-toggle aria-expanded="false" aria-controls="mobile-nav" aria-label="Toggle navigation menu">
+            <span class="sr-only">Open navigation menu</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <line x1="3" y1="6" x2="21" y2="6"></line>
+              <line x1="3" y1="12" x2="21" y2="12"></line>
+              <line x1="3" y1="18" x2="21" y2="18"></line>
+            </svg>
+          </button>
+          <nav class="hidden items-center gap-8 text-sm font-bold uppercase tracking-[0.16em] text-brand-navy md:flex">
+            <a href="#support" class="transition hover:text-brand-blue">Support</a>
+            <a href="#application-form" class="transition hover:text-brand-blue">Work With Us</a>
+          </nav>
+        </div>
+        <nav id="mobile-nav" class="mobile-nav hidden flex-col gap-3 border-t border-slate-100 pt-4 text-sm font-bold uppercase tracking-[0.16em] text-brand-navy md:hidden">
+          <a href="#support" class="transition hover:text-brand-blue">Support</a>
+          <a href="#application-form" class="transition hover:text-brand-blue">Work With Us</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="bg-white px-4 py-12 sm:px-6 lg:px-8">
+      <section id="application-form" class="mx-auto max-w-4xl">
+        <div class="text-center">
+          <h1 class="font-display text-4xl font-bold uppercase tracking-[0.03em] text-black sm:text-5xl">Apply Now</h1>
+          <p class="mt-3 text-base text-brand-slate sm:text-lg">Fill out this quick form to qualify</p>
+        </div>
+
+        <form class="mx-auto mt-8 max-w-3xl rounded-md border border-slate-300 bg-white p-5 shadow-card sm:p-8">
+          <div class="grid gap-x-4 gap-y-5 md:grid-cols-2">
+            <label class="block text-sm font-medium text-slate-800">
+              <span class="mb-1 block">First Name*</span>
+              <input type="text" class="h-11 w-full border border-slate-300 px-3 outline-none transition focus:border-brand-blue focus:ring-2 focus:ring-brand-blue/15">
+            </label>
+
+            <label class="block text-sm font-medium text-slate-800">
+              <span class="mb-1 block">Last Name*</span>
+              <input type="text" class="h-11 w-full border border-slate-300 px-3 outline-none transition focus:border-brand-blue focus:ring-2 focus:ring-brand-blue/15">
+            </label>
+
+            <label class="block text-sm font-medium text-slate-800">
+              <span class="mb-1 block">Mobile Number*</span>
+              <input type="tel" class="h-11 w-full border border-slate-300 px-3 outline-none transition focus:border-brand-blue focus:ring-2 focus:ring-brand-blue/15">
+            </label>
+
+            <label class="block text-sm font-medium text-slate-800">
+              <span class="mb-1 block">Email*</span>
+              <input type="email" class="h-11 w-full border border-slate-300 px-3 outline-none transition focus:border-brand-blue focus:ring-2 focus:ring-brand-blue/15">
+            </label>
+
+            <label class="block text-sm font-medium text-slate-800">
+              <span class="mb-1 block">Residence Address*</span>
+              <input type="text" class="h-11 w-full border border-slate-300 px-3 outline-none transition focus:border-brand-blue focus:ring-2 focus:ring-brand-blue/15">
+            </label>
+
+            <label class="block text-sm font-medium text-slate-800">
+              <span class="mb-1 block">Apartment # or Suite #</span>
+              <input type="text" class="h-11 w-full border border-slate-300 px-3 outline-none transition focus:border-brand-blue focus:ring-2 focus:ring-brand-blue/15">
+            </label>
+
+            <label class="block text-sm font-medium text-slate-800">
+              <span class="mb-1 block">City</span>
+              <input type="text" class="h-11 w-full border border-slate-300 px-3 outline-none transition focus:border-brand-blue focus:ring-2 focus:ring-brand-blue/15">
+            </label>
+
+            <label class="block text-sm font-medium text-slate-800">
+              <span class="mb-1 block">State</span>
+              <select class="h-11 w-full border border-slate-300 bg-white px-3 outline-none transition focus:border-brand-blue focus:ring-2 focus:ring-brand-blue/15">
+                <option>Select State</option>
+                <option>Alabama</option>
+                <option>California</option>
+                <option>Florida</option>
+                <option>Oklahoma</option>
+                <option>Tennessee</option>
+                <option>Texas</option>
+              </select>
+            </label>
+
+            <label class="block max-w-[180px] text-sm font-medium text-slate-800 md:col-span-1">
+              <span class="mb-1 block">Zipcode</span>
+              <input type="text" class="h-11 w-full border border-slate-300 px-3 outline-none transition focus:border-brand-blue focus:ring-2 focus:ring-brand-blue/15">
+            </label>
+          </div>
+
+          <div class="mt-6 space-y-5">
+            <fieldset class="space-y-2">
+              <legend class="text-sm font-medium text-slate-900">Do you have your own Team?</legend>
+              <label class="flex items-center gap-2 text-sm text-slate-700"><input type="checkbox" class="h-4 w-4 border-slate-300 text-brand-blue focus:ring-brand-blue"> YES</label>
+              <label class="flex items-center gap-2 text-sm text-slate-700"><input type="checkbox" class="h-4 w-4 border-slate-300 text-brand-blue focus:ring-brand-blue"> NO</label>
+            </fieldset>
+
+            <fieldset class="space-y-2">
+              <legend class="text-sm font-medium text-slate-900">Have you ever distributed Lifeline or ACP in the past?</legend>
+              <label class="flex items-center gap-2 text-sm text-slate-700"><input type="checkbox" class="h-4 w-4 border-slate-300 text-brand-blue focus:ring-brand-blue"> YES</label>
+              <label class="flex items-center gap-2 text-sm text-slate-700"><input type="checkbox" class="h-4 w-4 border-slate-300 text-brand-blue focus:ring-brand-blue"> NO</label>
+            </fieldset>
+
+            <fieldset class="space-y-2">
+              <legend class="text-sm font-medium text-slate-900">Do you own a smartphone or tablet with mobile data?</legend>
+              <label class="flex items-center gap-2 text-sm text-slate-700"><input type="checkbox" class="h-4 w-4 border-slate-300 text-brand-blue focus:ring-brand-blue"> YES</label>
+              <label class="flex items-center gap-2 text-sm text-slate-700"><input type="checkbox" class="h-4 w-4 border-slate-300 text-brand-blue focus:ring-brand-blue"> NO</label>
+            </fieldset>
+
+            <fieldset class="space-y-2">
+              <legend class="text-sm font-medium text-slate-900">Do you have reliable transportation?</legend>
+              <label class="flex items-center gap-2 text-sm text-slate-700"><input type="checkbox" class="h-4 w-4 border-slate-300 text-brand-blue focus:ring-brand-blue"> YES</label>
+              <label class="flex items-center gap-2 text-sm text-slate-700"><input type="checkbox" class="h-4 w-4 border-slate-300 text-brand-blue focus:ring-brand-blue"> NO</label>
+            </fieldset>
+
+            <fieldset class="space-y-2">
+              <legend class="text-sm font-medium text-slate-900">Do you have a team?</legend>
+              <label class="flex items-center gap-2 text-sm text-slate-700"><input type="checkbox" class="h-4 w-4 border-slate-300 text-brand-blue focus:ring-brand-blue"> YES</label>
+              <label class="flex items-center gap-2 text-sm text-slate-700"><input type="checkbox" class="h-4 w-4 border-slate-300 text-brand-blue focus:ring-brand-blue"> NO</label>
+            </fieldset>
+
+            <fieldset class="space-y-2">
+              <legend class="text-sm font-medium text-slate-900">Are you willing to travel?</legend>
+              <label class="flex items-center gap-2 text-sm text-slate-700"><input type="checkbox" class="h-4 w-4 border-slate-300 text-brand-blue focus:ring-brand-blue"> YES</label>
+              <label class="flex items-center gap-2 text-sm text-slate-700"><input type="checkbox" class="h-4 w-4 border-slate-300 text-brand-blue focus:ring-brand-blue"> NO</label>
+            </fieldset>
+
+            <fieldset class="space-y-2">
+              <legend class="text-sm font-medium text-slate-900">Do you have customer Service experience?</legend>
+              <label class="flex items-center gap-2 text-sm text-slate-700"><input type="checkbox" class="h-4 w-4 border-slate-300 text-brand-blue focus:ring-brand-blue"> YES</label>
+              <label class="flex items-center gap-2 text-sm text-slate-700"><input type="checkbox" class="h-4 w-4 border-slate-300 text-brand-blue focus:ring-brand-blue"> NO</label>
+            </fieldset>
+
+            <label class="block text-sm font-medium text-slate-800">
+              <span class="mb-1 block">Any additional information</span>
+              <textarea rows="3" class="w-full border border-slate-300 px-3 py-3 outline-none transition focus:border-brand-blue focus:ring-2 focus:ring-brand-blue/15"></textarea>
+            </label>
+
+            <label class="flex cursor-pointer items-center justify-center border border-brand-blue px-4 py-5 text-center text-sm text-brand-navy transition hover:bg-slate-50">
+              <input type="file" class="hidden">
+              Click to upload your Proof of Address (for Driver License, utility door, etc.)
+            </label>
+
+            <label class="flex cursor-pointer items-center justify-center border border-brand-blue px-4 py-5 text-center text-sm text-brand-navy transition hover:bg-slate-50">
+              <input type="file" class="hidden">
+              Click to upload you Resume ( not required )
+            </label>
+
+            <button type="submit" class="h-12 w-full bg-brand-danger text-sm font-bold uppercase tracking-[0.18em] text-white transition hover:bg-red-700">Submit</button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer class="bg-[#2a2f36] text-slate-300">
+      <div class="mx-auto flex max-w-7xl flex-col gap-4 px-4 py-5 text-center text-sm sm:px-6 md:flex-row md:items-center md:justify-between md:text-left lg:px-8">
+        <p>Galaxy Distribution LLC &copy; 2026.</p>
+        <div class="flex flex-wrap items-center justify-center gap-3 md:justify-end">
+          <a href="#" class="transition hover:text-white">Privacy Policy</a>
+          <span class="hidden text-slate-500 md:inline">|</span>
+          <a href="#" class="transition hover:text-white">Terms of Service</a>
+          <span class="hidden text-slate-500 md:inline">|</span>
+          <a href="#" class="transition hover:text-white">Accessibility</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    (function() {
+      const menuToggle = document.querySelector('[data-menu-toggle]');
+      const mobileNav = document.querySelector('#mobile-nav');
+
+      if (!menuToggle || !mobileNav) {
+        return;
+      }
+
+      menuToggle.addEventListener('click', function() {
+        const isOpen = mobileNav.classList.toggle('is-open');
+        mobileNav.classList.toggle('hidden', !isOpen);
+        menuToggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+      });
+    })();
+  </script>
+</body>
+</html>

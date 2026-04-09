@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galaxy Distribution Accessibility</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind = window.tailwind || {};
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              blue: '#0b73c9',
+              navy: '#071426',
+              slate: '#7a8190',
+              border: '#d9e1ea',
+              coral: '#ff7c78'
+            }
+          },
+          fontFamily: {
+            sans: ['Barlow', 'sans-serif'],
+            display: ['Space Grotesk', 'sans-serif']
+          }
+        }
+      }
+    };
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen bg-white font-sans text-slate-800 antialiased">
+  <div class="bg-brand-blue text-white">
+    <div class="mx-auto flex max-w-7xl flex-col items-center justify-between gap-2 px-4 py-2 text-[11px] font-semibold uppercase tracking-[0.18em] sm:flex-row sm:px-6 lg:px-8">
+      <a href="mailto:info@galaxydistribution.com" class="transition hover:text-sky-100">Email: info@galaxydistribution.com</a>
+      <a href="tel:+18303345600" class="transition hover:text-sky-100">Contact: (830) 334-5600</a>
+    </div>
+  </div>
+
+  <header class="border-b border-slate-100 bg-white">
+    <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-5 sm:px-6 lg:px-8">
+      <a href="./landing-tailwind.html" class="flex items-center">
+        <img src="./img/logo.png" alt="Galaxy Distribution" class="h-11 w-auto sm:h-14">
+      </a>
+      <nav class="hidden items-center gap-8 text-sm font-bold uppercase tracking-[0.16em] text-brand-navy md:flex">
+        <a href="#hearing-aid-compatibility" class="transition hover:text-brand-blue">Support</a>
+        <a href="#devices-no-longer-offered" class="transition hover:text-brand-blue">Accessibility</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="px-4 py-12 sm:px-6 lg:px-8 lg:py-16">
+    <section class="mx-auto max-w-7xl" id="hearing-aid-compatibility">
+      <div class="max-w-5xl">
+        <h1 class="font-display text-3xl font-bold text-black sm:text-4xl">Hearing Aid Compatibility</h1>
+
+        <div class="mt-6 space-y-6 text-[17px] leading-8 text-brand-slate">
+          <p>The Federal Communications Commission (FCC) has implemented rules and a rating system for Hearing aid-compatible (HAC) devices designed to enable people who wear hearing aids to use these wireless telecommunications devices more effectively. The American National Standard Institute (ANSI) sets the standards for compatibility of digital wireless phones with hearing aids - ANSI standard C63.19.</p>
+
+          <p>Previously, two sets of ANSI standards, an “M” rating for reducing interference making it easier to use the hearing aid microphone, and a “T” rating for reducing unwanted background noise. As both hearing aid and device technology has improved, to be considered “good” or “excellent,” wireless devices are expected to have a T3, T4 or M3, M4 rating.</p>
+
+          <div>
+            <p>Information about Hearing Aid Compatibility rules, can be found on the FCC’s website at:</p>
+            <a href="https://www.fcc.gov/hearing-aid-compatibility-wireless-telephones" target="_blank" rel="noopener noreferrer" class="mt-2 inline-block text-brand-blue transition hover:underline">https://www.fcc.gov/hearing-aid-compatibility-wireless-telephones</a>
+          </div>
+        </div>
+
+        <div class="mt-10 overflow-x-auto">
+          <table class="min-w-full border border-slate-300 text-left text-[15px] text-brand-slate">
+            <thead class="bg-brand-blue text-white">
+              <tr>
+                <th class="border border-slate-300 px-4 py-3 font-bold uppercase tracking-[0.06em]">Make</th>
+                <th class="border border-slate-300 px-4 py-3 font-bold uppercase tracking-[0.06em]">Model</th>
+                <th class="border border-slate-300 px-4 py-3 font-bold uppercase tracking-[0.06em]">Network Type</th>
+                <th class="border border-slate-300 px-4 py-3 font-bold uppercase tracking-[0.06em]">HAC</th>
+                <th class="border border-slate-300 px-4 py-3 font-bold uppercase tracking-[0.06em]">HAC Rating</th>
+                <th class="border border-slate-300 px-4 py-3 font-bold uppercase tracking-[0.06em]">FCC ID</th>
+              </tr>
+            </thead>
+            <tbody class="bg-white">
+              <tr>
+                <td class="border border-slate-300 px-4 py-3">BLU</td>
+                <td class="border border-slate-300 px-4 py-3">C5L Max</td>
+                <td class="border border-slate-300 px-4 py-3">GSM</td>
+                <td class="border border-slate-300 px-4 py-3">YES</td>
+                <td class="border border-slate-300 px-4 py-3">M4 , T3</td>
+                <td class="border border-slate-300 px-4 py-3">YHLBLUC5LMAX</td>
+              </tr>
+              <tr>
+                <td class="border border-slate-300 px-4 py-3">BLU</td>
+                <td class="border border-slate-300 px-4 py-3">G33</td>
+                <td class="border border-slate-300 px-4 py-3">GSM</td>
+                <td class="border border-slate-300 px-4 py-3">YES</td>
+                <td class="border border-slate-300 px-4 py-3">M3 , T3</td>
+                <td class="border border-slate-300 px-4 py-3">YHLBLUG33092</td>
+              </tr>
+              <tr>
+                <td class="border border-slate-300 px-4 py-3">Emblem</td>
+                <td class="border border-slate-300 px-4 py-3">YES</td>
+                <td class="border border-slate-300 px-4 py-3">GSM</td>
+                <td class="border border-slate-300 px-4 py-3">YES</td>
+                <td class="border border-slate-300 px-4 py-3">M3 , T4</td>
+                <td class="border border-slate-300 px-4 py-3">XD6U318AA</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="mt-14" id="devices-no-longer-offered">
+          <h2 class="font-display text-xl font-bold text-brand-coral underline decoration-[1.5px] underline-offset-4">Devices No Longer Offered</h2>
+
+          <div class="mt-8 overflow-x-auto">
+            <table class="min-w-[760px] border border-slate-300 text-left text-[15px] text-brand-slate sm:min-w-0 sm:w-[86%]">
+              <thead class="bg-brand-blue text-white">
+                <tr>
+                  <th class="border border-slate-300 px-4 py-3 font-bold uppercase tracking-[0.06em]">Make</th>
+                  <th class="border border-slate-300 px-4 py-3 font-bold uppercase tracking-[0.06em]">Model</th>
+                  <th class="border border-slate-300 px-4 py-3 font-bold uppercase tracking-[0.06em]">Network Type</th>
+                  <th class="border border-slate-300 px-4 py-3 font-bold uppercase tracking-[0.06em]">HAC</th>
+                  <th class="border border-slate-300 px-4 py-3 font-bold uppercase tracking-[0.06em]">FCC ID</th>
+                </tr>
+              </thead>
+              <tbody class="bg-white">
+                <tr>
+                  <td class="border border-slate-300 px-4 py-3">Axia</td>
+                  <td class="border border-slate-300 px-4 py-3">QS5509A</td>
+                  <td class="border border-slate-300 px-4 py-3">GSM</td>
+                  <td class="border border-slate-300 px-4 py-3">NO</td>
+                  <td class="border border-slate-300 px-4 py-3">2A06NA001</td>
+                </tr>
+                <tr>
+                  <td class="border border-slate-300 px-4 py-3">Maxwest</td>
+                  <td class="border border-slate-300 px-4 py-3">Astro 55R</td>
+                  <td class="border border-slate-300 px-4 py-3">GSM</td>
+                  <td class="border border-slate-300 px-4 py-3">NO</td>
+                  <td class="border border-slate-300 px-4 py-3">2ASP8ASTRO55R</td>
+                </tr>
+                <tr>
+                  <td class="border border-slate-300 px-4 py-3">Maxwest</td>
+                  <td class="border border-slate-300 px-4 py-3">Nitro 55A</td>
+                  <td class="border border-slate-300 px-4 py-3">GSM</td>
+                  <td class="border border-slate-300 px-4 py-3">NO</td>
+                  <td class="border border-slate-300 px-4 py-3">2ASP8NITRO55A</td>
+                </tr>
+                <tr>
+                  <td class="border border-slate-300 px-4 py-3">Maxwest</td>
+                  <td class="border border-slate-300 px-4 py-3">Nitro 55E</td>
+                  <td class="border border-slate-300 px-4 py-3">GSM</td>
+                  <td class="border border-slate-300 px-4 py-3">NO</td>
+                  <td class="border border-slate-300 px-4 py-3">2ASP8NITRO55E</td>
+                </tr>
+                <tr>
+                  <td class="border border-slate-300 px-4 py-3">Maxwest</td>
+                  <td class="border border-slate-300 px-4 py-3">Nitro 5P</td>
+                  <td class="border border-slate-300 px-4 py-3">GSM</td>
+                  <td class="border border-slate-300 px-4 py-3">NO</td>
+                  <td class="border border-slate-300 px-4 py-3">2ASP8NITRO5P</td>
+                </tr>
+                <tr>
+                  <td class="border border-slate-300 px-4 py-3">True Slim</td>
+                  <td class="border border-slate-300 px-4 py-3">5516D</td>
+                  <td class="border border-slate-300 px-4 py-3">GSM</td>
+                  <td class="border border-slate-300 px-4 py-3">NO</td>
+                  <td class="border border-slate-300 px-4 py-3">2AL4OSSB-508</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-[#2a2f36] text-slate-300">
+    <div class="mx-auto flex max-w-7xl flex-col gap-4 px-4 py-5 text-center text-sm sm:px-6 md:flex-row md:items-center md:justify-between md:text-left lg:px-8">
+      <p>Galaxy Distribution LLC &copy; 2026.</p>
+      <div class="flex flex-wrap items-center justify-center gap-3 md:justify-end">
+        <a href="#" class="transition hover:text-white">Privacy Policy</a>
+        <span class="hidden text-slate-500 md:inline">|</span>
+        <a href="#" class="transition hover:text-white">Terms of Service</a>
+        <span class="hidden text-slate-500 md:inline">|</span>
+        <a href="#" class="transition hover:text-white">Accessibility</a>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
