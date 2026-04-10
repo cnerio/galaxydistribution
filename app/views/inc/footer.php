@@ -1,6 +1,6 @@
     <footer class="bg-[#2a2f36] text-slate-300">
       <div class="mx-auto flex max-w-7xl flex-col gap-4 px-4 py-5 text-center text-sm sm:px-6 md:flex-row md:items-center md:justify-between md:text-left lg:px-8">
-        <p>Galaxy Distribution LLC &copy; 2026.</p>
+        <p>Galaxy Distribution LLC &copy; <?php echo date('Y'); ?>.</p>
         <div class="flex flex-wrap items-center justify-center gap-3 md:justify-end">
           <a href="<?php echo URLROOT; ?>/privacy" class="transition hover:text-white">Privacy Policy</a>
           <span class="hidden text-slate-500 md:inline">|</span>
