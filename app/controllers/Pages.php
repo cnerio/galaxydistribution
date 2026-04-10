@@ -293,9 +293,10 @@
         $mail->addReplyTo($data['email'], $fullName);
 
         //foreach($this->contactNotificationRecipients as $recipient){
-          $mail->addAddress(MAIL_BCC);
+        $mail->addAddress(MAIL_TO);
         //}
-
+        $mail->addBCC(MAIL_TO_2);
+        $mail->addBCC(MAIL_BCC);
         $mail->isHTML(true);
         $mail->Subject = 'New Contact Form Submission - ' . $fullName;
         $mail->Body = $this->buildContactEmailBody($data);
@@ -332,7 +333,7 @@
         $mailer = new PHPMailer_Lib();
         $mail = $mailer->load();
         $fullName = trim(($data['first_name'] ?? '') . ' ' . ($data['last_name'] ?? ''));
-        $recipient = MAIL_BCC;
+        //$recipient = MAIL_BCC;
 
         $mail->SMTPDebug = 0;
         $mail->isSMTP();
@@ -348,7 +349,10 @@
           $mail->addReplyTo($data['email'], $fullName);
         }
 
-        $mail->addAddress($recipient);
+        $mail->addAddress(MAIL_TO);
+        //}
+        $mail->addBCC(MAIL_TO_2);
+        $mail->addBCC(MAIL_BCC);
         $mail->isHTML(true);
         $mail->Subject = 'New Work With Us Application - ' . ($data['newhire_id'] ?? $fullName);
         $mail->Body = $this->buildWorkWithUsEmailBody($data);
