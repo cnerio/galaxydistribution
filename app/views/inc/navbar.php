@@ -23,12 +23,12 @@
         </button>
         <nav class="hidden items-center gap-8 text-sm font-bold uppercase tracking-[0.16em] text-brand-navy md:flex">
           <a href="<?php echo URLROOT; ?>/pages/contact" class="transition hover:text-brand-blue">Support</a>
-          <a href="<?php echo URLROOT; ?>/pages/work" class="transition hover:text-brand-blue">Work With Us</a>
+          <a href="<?php echo URLROOT; ?>/pages/workwithus" class="transition hover:text-brand-blue">Work With Us</a>
         </nav>
       </div>
         <nav id="mobile-nav" class="mobile-nav hidden flex-col gap-3 border-t border-slate-100 pt-4 text-sm font-bold uppercase tracking-[0.16em] text-brand-navy md:hidden">
           <a href="<?php echo URLROOT; ?>/pages/contact" class="transition hover:text-brand-blue">Support</a>
-          <a href="<?php echo URLROOT; ?>/pages/work" class="transition hover:text-brand-blue">Work With Us</a>
+          <a href="<?php echo URLROOT; ?>/pages/workwithus" class="transition hover:text-brand-blue">Work With Us</a>
         </nav>
       </div>
     </header>

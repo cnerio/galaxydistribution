@@ -20,6 +20,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;display=swap">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Share+Tech&amp;display=swap">
   <title><?php echo SITENAME; ?></title>
+  <link rel="icon" type="image/png" href="<?php echo URLROOT; ?>/img/favicon.png">
 </head>
 <body>
 <!-- Google Tag Manager (noscript) -->
