@@ -42,7 +42,7 @@
             Limited-Time Enrollment
           </p> -->
           <h2 class="mt-4 text-2xl font-bold leading-tight text-brand-navy sm:text-3xl">Get Free Data, Talk, and Text</h2>
-          <p class="mt-3 text-base font-medium leading-7 text-slate-600 sm:text-lg">Apply now for Lifeline program enrollment in a few minutes.</p>
+          <p class="mt-3 text-base font-medium leading-7 text-slate-600 sm:text-lg">Apply now for Lifeline program enrollment in just a few minutes.</p>
           <a href="https://americanassistance.us/" class="mt-6 inline-flex items-center justify-center rounded-lg bg-brand-blue px-9 py-3.5 text-lg font-semibold text-white shadow-lg shadow-blue-300/50 transition duration-200 hover:-translate-y-0.5 hover:brightness-110 focus:outline-none focus:ring-2 focus:ring-brand-blue/70 focus:ring-offset-2">
             Apply Now
           </a>
