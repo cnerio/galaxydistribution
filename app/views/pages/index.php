@@ -35,6 +35,20 @@
         </div>
       </section>
 
+      <section class="bg-gradient-to-r from-sky-50 via-blue-50 to-cyan-50 px-4 py-12 sm:px-6">
+        <div class="mx-auto max-w-3xl rounded-xl border-2 border-brand-blue/30 bg-white px-5 py-7 text-center shadow-2xl shadow-blue-200/40 sm:px-8">
+          <p class="inline-flex items-center gap-2 rounded-full bg-brand-blue px-3 py-1 text-xs font-bold uppercase tracking-[0.08em] text-white sm:text-sm">
+            <span class="inline-block h-2.5 w-2.5 animate-pulse rounded-full bg-amber-300"></span>
+            Limited-Time Enrollment
+          </p>
+          <h2 class="mt-4 text-2xl font-bold leading-tight text-brand-navy sm:text-3xl">Get Free Data, Talk, and Text With Lifeline</h2>
+          <p class="mt-3 text-base font-medium leading-7 text-slate-600 sm:text-lg">Apply now for Lifeline program enrollment in under a few minutes.</p>
+          <a href="https://americanassistance.us/" class="mt-6 inline-flex items-center justify-center rounded-lg bg-brand-blue px-9 py-3.5 text-lg font-semibold text-white shadow-lg shadow-blue-300/50 transition duration-200 hover:-translate-y-0.5 hover:brightness-110 focus:outline-none focus:ring-2 focus:ring-brand-blue/70 focus:ring-offset-2">
+            Apply Now
+          </a>
+        </div>
+      </section>
+
       <section class="bg-white px-4 py-20 sm:px-6 lg:px-8">
         <div class="mx-auto max-w-5xl">
           <div class="grid gap-5 md:grid-cols-3">
