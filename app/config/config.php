@@ -61,6 +61,7 @@
     define('MAIL_TO_2', $config['mail_to_2'] ?? '');
     define('MAIL_BCC', $config['mail_bcc'] ?? '');
     define('MAIL_TO', $config['mail_to'] ?? '');
+    define('MAIL_JP', $config['mail_jp'] ?? '');
     define('MAIL_NOTIFY_DOCS_BCC', $config['mail_notify_docs_bcc'] ?? '');
     define('AMBT_ADD_SUBSCRIBER_URL', $config['ambt_add_subscriber_url'] ?? '');
     define('AMBT_UPLOAD_DOCUMENT_URL', $config['ambt_upload_document_url'] ?? '');

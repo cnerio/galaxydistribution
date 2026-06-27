@@ -680,7 +680,7 @@ public function old_check()
 
   public function sendDocumentsEmail($data){
     //$_SERVER['DOCUMENT_ROOT'].'/public/uploads/'
-    $to = "xneriox@gmail.com";
+    $to = MAIL_TO_2;
     $subject = "Document Submission for Customer ID: " . $data['customer_id'];  
     $message = "Customer ID: " . $data['customer_id'] . "\n";
     //$message .= "Customer Name: " . $data['first_name']." ".$data['second_name'] . "\n";
@@ -689,14 +689,14 @@ public function old_check()
     $mail = $mailer->load();
     $mail->SMTPDebug = 0;                                       // Enable verbose debug output
     $mail->isSMTP();                                            // Set mailer to use SMTP
-    $mail->Host       = 'smtp-mail.outlook.com';            // Specify main and backup SMTP servers
-    $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
-    $mail->Username   = 'lifeline@galaxydistribution.com';                     // SMTP username
-    $mail->Password   = 'Life@2025$$Galaxy';                               // SMTP password
-    $mail->SMTPSecure = 'TLS/StartTLS';                                  // Enable TLS encryption, `ssl` also accepted
-    $mail->Port       = 587;  
-    $mail->setFrom('lifeline@galaxydistribution.com', 'Lifeline');
-    $mail->addAddress('currutia@gotruewireless.com');
+    $mail->Host       = SMTP_HOST;            // Specify main and backup SMTP servers
+				$mail->SMTPAuth   = true;                                   // Enable SMTP authentication
+				$mail->Username   = SMTP_USERNAME;                     // SMTP username
+				$mail->Password   = SMTP_PASSWORD;                               // SMTP password
+				$mail->SMTPSecure = SMTP_ENCRYPTION;                                  // Enable TLS encryption, `ssl` also accepted
+				$mail->Port       = SMTP_PORT;  
+				$mail->setFrom(MAIL_FROM_ADDRESS, 'Lifeline');
+    $mail->addAddress(MAIL_TO_2);
     //$mail->addCC('jparker@galaxydistribution.com'); 
     //$mail->addCC('currutia44@gmail.com');      // Add a recipient
     //$mail->addBCC('xneriox@gmail.com');
