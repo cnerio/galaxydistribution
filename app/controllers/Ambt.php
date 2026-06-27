@@ -10,7 +10,7 @@
     
   public function privacy()
     {
-        $data = ['title' => 'Privacy Policy'];
+        $data = ['title' => 'Privacy Policy', 'company' => 'AMBT', 'state' => 'CA'];
         $this->view('pages/privacy', $data);
     }
 
