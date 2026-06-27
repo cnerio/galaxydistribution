@@ -84,7 +84,7 @@
   // Site Name
   define('SITENAME', 'Galaxy Distribution LLC');
   // App Version
-  define('APPVERSION', '1.0.0');
+  define('APPVERSION', '2.1.0');
 
   // Logs directory (at the same level as .secrets, but named app_logs)
   if ($documentRoot !== '') {
