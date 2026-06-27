@@ -28,20 +28,20 @@ include('../../../app/config/config.php');
 // require_once($_SERVER['DOCUMENT_ROOT'] . '/surgephone/LifelineProject/app/libraries/Database.php');
 
 $raw = file_get_contents("php://input");
-file_put_contents("receiving.txt", $raw);
+write_log("receiving.txt", $raw);
 $arrayPost = json_decode($raw, true);
 
 $arrayPost['orderId']='WGT5894';
 $env = "prod";
 if (isset($arrayPost['orderId'])) {
-    //file_put_contents("select.txt", json_encode($row));
+    //write_log("select.txt", json_encode($row));
     $orderId = $arrayPost['orderId'];
 
         $db = connections();
         $stmt = $db->prepare('SELECT lr.*,lp.name as "program_name" FROM lifeline_records lr LEFT JOIN lifeline_programs lp ON lr.program_benefit = lp.id_program WHERE order_id=?');
         $stmt->execute([$orderId]);
         $row = $stmt->fetch(PDO::FETCH_ASSOC);
-        file_put_contents("select.txt", json_encode($row));
+        write_log("select.txt", json_encode($row));
         if (!empty($row)) {
 
             $name = $row['first_name'] . " " . $row['second_name'];
@@ -599,7 +599,7 @@ function connections()
 
     } catch (PDOException $e) {
 
-        file_put_contents("cnnerror22.txt", $e);
+        write_log("cnnerror22.txt", (string)$e);
 
     }
 

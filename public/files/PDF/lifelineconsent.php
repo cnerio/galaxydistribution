@@ -2,12 +2,12 @@
 
 use setasign\Fpdi\Fpdi;
 
-error_reporting(E_ALL);
-ini_set('display_errors', '1');
+// error_reporting(E_ALL);
+// ini_set('display_errors', '1');
 require('fpdf.php');
 require_once('src/autoload.php');
-require_once($_SERVER['DOCUMENT_ROOT'] . '/surgephone/LifelineProject/app/config/config.php');
-require_once($_SERVER['DOCUMENT_ROOT'] . '/surgephone/LifelineProject/app/libraries/Database.php');
+require_once($_SERVER['DOCUMENT_ROOT'] . '/app/config/config.php');
+require_once($_SERVER['DOCUMENT_ROOT'] . '/app/libraries/Database.php');
 $db = new Database();
 
 $code = $_GET['c'];
@@ -24,7 +24,7 @@ if ($company === "TERRACOM") {
 }
 /**********************************/
 $payload = array(
-    'apikey' => 'U3VyZ2VwYXlzMjQ6VyEybTZASnk4QVFk',
+    'apikey' => CONSENT_API_KEY,
     'company' => $company,
     'source' => $source,
 );

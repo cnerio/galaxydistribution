@@ -30,7 +30,7 @@
       } catch(PDOException $e){
         $this->error = $e->getMessage();
         //echo $this->error;
-			file_put_contents("conexionError.txt",$this->error);
+			write_log("conexionError.txt",$this->error);
       }
     }
 

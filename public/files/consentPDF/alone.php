@@ -8,14 +8,13 @@ error_reporting(E_ALL);
 ini_set('display_errors', '0');
 
 
-
 header("Access-Control-Allow-Origin: *");
 header('Access-Control-Allow-Methods: GET, POST, OPTIONS');
 header("Access-Control-Allow-Headers: Content-Type, Authorization");
 header("Content-Type: application/json; charset=UTF-8");
 header("Connection: keep-alive");
 
-require_once($_SERVER['DOCUMENT_ROOT'] . '/surgephone/LifelineProject/app/config/config.php');
+require_once(__DIR__ . '/../../../app/config/config.php');
 
 // require_once($_SERVER['DOCUMENT_ROOT'] . '/surgephone/LifelineProject/app/libraries/Database.php');
 
@@ -336,7 +335,7 @@ function connections()
 
     } catch (PDOException $e) {
 
-        file_put_contents("cnnerror22.txt", $e);
+        write_log("cnnerror22.txt", (string)$e);
 
     }
 

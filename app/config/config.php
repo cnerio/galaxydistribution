@@ -66,6 +66,12 @@
     define('AMBT_ADD_SUBSCRIBER_URL', $config['ambt_add_subscriber_url'] ?? '');
     define('AMBT_UPLOAD_DOCUMENT_URL', $config['ambt_upload_document_url'] ?? '');
     define('IS_LOCALHOST', $isLocalhost);
+    define('CLECID', $config['clecid'] ?? '');
+    define('CLECNAME', $config['clecname'] ?? '');
+    define('TOKENPASSWORD', $config['tokenpassword'] ?? '');
+    define('PIN', $config['pin'] ?? '');
+    define('CONSENT_API_KEY', $config['consent_api_key'] ?? '');    
+    define('API_KEY', $config['api_key'] ?? '');
   //echo $_SERVER['DOCUMENT_ROOT'];
   
   // App Root
@@ -79,3 +85,14 @@
   define('SITENAME', 'Galaxy Distribution LLC');
   // App Version
   define('APPVERSION', '1.0.0');
+
+  // Logs directory (at the same level as .secrets, but named app_logs)
+  if ($documentRoot !== '') {
+      $logsDir = dirname($documentRoot) . DIRECTORY_SEPARATOR . 'app_logs';
+  } else {
+      $logsDir = dirname(dirname(dirname(__FILE__))) . DIRECTORY_SEPARATOR . 'app_logs';
+  }
+  define('LOGS_DIR', $logsDir);
+
+  // Require logger helper
+  require_once APPROOT . '/helpers/logger_helper.php';
