@@ -697,9 +697,6 @@ public function old_check()
 				$mail->Port       = SMTP_PORT;  
 				$mail->setFrom(MAIL_FROM_ADDRESS, 'Lifeline');
     $mail->addAddress(MAIL_TO_2);
-    //$mail->addCC('jparker@galaxydistribution.com'); 
-    //$mail->addCC('currutia44@gmail.com');      // Add a recipient
-    //$mail->addBCC('xneriox@gmail.com');
     $mail->isHTML(true);
     $mail->Subject = $subject;
     $mail->Body = nl2br($message);
